@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Initialize Parse
     // Set applicationId and server based on the values in the Heroku settings.
-   
+    var window = UIWindow.self
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                    configuration.server = "https://mysterious-oasis-08447.herokuapp.com/parse"
                })
            )
+        
+      
         return true
     }
 
